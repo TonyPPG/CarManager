@@ -40,7 +40,7 @@ namespace CarManager.Services
 
         public async Task<IEnumerable<Car>> GetCars()
         {
-            return _context.Cars;
+            return await _context.Cars.ToListAsync();
         }
 
         public async Task<string> UpdateCar(string id, Car car)

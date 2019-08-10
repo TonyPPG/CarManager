@@ -29,13 +29,13 @@ namespace CarManager.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var response = _mediator.Send(new FetchCarsRequest(0));
+            var response = await _mediator.Send(new FetchCarsRequest(0));
 
             if (response == null)
             {
                 return NotFound();
             }
-            return Ok(response.Result);
+            return Ok(response);
         }
 
         // GET: api/cars/id

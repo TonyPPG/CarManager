@@ -39,7 +39,7 @@ namespace CarManager.Data
         [Required]
         public double Price { get; set; }
 
-        //public List<string> ImageUrls { get; set; }
+        public string ImageUrl { get; set; }
 
         public Car()
         {

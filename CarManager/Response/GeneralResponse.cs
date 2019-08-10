@@ -1,5 +1,4 @@
-﻿using System;
-namespace CarManager.Response
+﻿namespace CarManager.Response
 {
     public class GeneralResponse
     {
