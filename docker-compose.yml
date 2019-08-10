@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  carmanager:
+    ports: 
+      - 5000:5000
+    image: ${DOCKER_REGISTRY-}carmanager
+    build:
+      context: .
+      dockerfile: CarManager/Dockerfile
